@@ -7,4 +7,4 @@ A configurations control for customizable inspector panels. Mimics the Xcode ins
 ## Ways to achieve this look
 
 
-config-example: http://joris.kluivers.nl/images/config-example.png 
+[config-example]: http://joris.kluivers.nl/images/config-example.png 
