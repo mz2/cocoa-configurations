@@ -51,10 +51,10 @@
 
 - (NSView *) outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
 	if ([self outlineView:outlineView isGroupItem:item]) {
-		NSTableCellView *view = [outlineView makeViewWithIdentifier:@"HeaderView" owner:self];
-		//[view.textField.cell setBackgroundStyle:NSBackgroundStyleRaised];
-		return view;
+		return [outlineView makeViewWithIdentifier:@"HeaderView" owner:self];
 	}
+	
+	// TODO: return correct NSTableCellView subclass
 	
 	return [outlineView makeViewWithIdentifier:@"DefaultCell" owner:self];
 }
@@ -63,6 +63,8 @@
 	if ([self outlineView:outlineView isGroupItem:item]) {
 		return 18.f;
 	}
+	
+	// TODO: return correct height for inspector cell view
 	
 	return 20.0f;
 }
