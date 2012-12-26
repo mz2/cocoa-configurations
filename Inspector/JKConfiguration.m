@@ -8,7 +8,12 @@
 
 #import "JKConfiguration.h"
 
-@implementation JKConfiguration
+@interface JKConfiguration ()
+
+@end
+
+@implementation JKConfiguration {
+}
 
 - (id) init
 {
@@ -19,9 +24,25 @@
 	return self;
 }
 
+- (id) initWithNibName:(NSString *)name height:(CGFloat)height
+{
+	self = [super init];
+	if (self) {
+		_children = nil;
+		_nibName = name;
+		_height = height;
+	}
+	return self;
+}
+
 + (id) configuration
 {
 	return [[self alloc] init];
+}
+
++ (id) configurationWithNibName:(NSString *)name height:(CGFloat)height
+{
+	return [[self alloc] initWithNibName:name height:height];
 }
 
 - (NSString *) description

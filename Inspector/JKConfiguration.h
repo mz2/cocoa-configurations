@@ -11,7 +11,10 @@
 @interface JKConfiguration : NSObject
 
 @property(strong) NSArray *children;
+@property(strong) NSString *nibName;
+@property(assign) CGFloat height;
 
 + (id) configuration;
++ (id) configurationWithNibName:(NSString *)name height:(CGFloat)height;
 
 @end

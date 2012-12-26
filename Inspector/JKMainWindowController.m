@@ -8,8 +8,10 @@
 
 #import "JKMainWindowController.h"
 
+#import "JKConfiguration.h"
 #import "JKConfigurationGroup.h"
 #import "JKConfigurationHeaderRowView.h"
+#import "NSTableCellView+JKNibLoading.h"
 
 @interface JKMainWindowController ()
 
@@ -23,9 +25,13 @@
 {
     self = [super initWithWindow:window];
     if (self) {
-        // Initialization code here.
+		JKConfigurationGroup *identity = [JKConfigurationGroup configurationWithTitle:@"Identity and Type"];
+		identity.children = @[
+			[JKConfiguration configurationWithNibName:@"FileInspector" height:150.f]
+		];
+		
 		_configurations = @[
-			[JKConfigurationGroup configurationWithTitle:@"Identity and Type"],
+			identity,
 			[JKConfigurationGroup configurationWithTitle:@"Localization"],
 			[JKConfigurationGroup configurationWithTitle:@"Target Membership"]
 		];
@@ -54,9 +60,18 @@
 		return [outlineView makeViewWithIdentifier:@"HeaderView" owner:self];
 	}
 	
-	// TODO: return correct NSTableCellView subclass
+	JKConfiguration *config = [item representedObject];
+	if (!config.nibName) {
+		return [outlineView makeViewWithIdentifier:@"DefaultCell" owner:self];
+	}
 	
-	return [outlineView makeViewWithIdentifier:@"DefaultCell" owner:self];
+	NSView *cellView = [outlineView makeViewWithIdentifier:config.nibName owner:self];
+	if (!cellView) {
+		cellView = [NSTableCellView tableCellViewWithNibNamed:config.nibName owner:self];
+	}
+	
+	return cellView;
+	
 }
 
 - (CGFloat) outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item {
@@ -64,7 +79,10 @@
 		return 18.f;
 	}
 	
-	// TODO: return correct height for inspector cell view
+	JKConfiguration *config = [item representedObject];
+	if (config.nibName) {
+		return config.height;
+	}
 	
 	return 20.0f;
 }
