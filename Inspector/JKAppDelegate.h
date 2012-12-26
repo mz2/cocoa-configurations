@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "JKMainWindowController.h"
+
 @interface JKAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (strong) NSWindowController *mainWindowController;
 
 @end

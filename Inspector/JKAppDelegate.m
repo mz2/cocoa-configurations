@@ -12,7 +12,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+	self.mainWindowController = [[JKMainWindowController alloc] initWithWindowNibName:@"JKMainWindow"];
+	[self.mainWindowController showWindow:self];
 }
 
 @end

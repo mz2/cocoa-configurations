@@ -13,6 +13,13 @@
 		A9403213168B0B6100BCF9C3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9403211168B0B6100BCF9C3 /* Credits.rtf */; };
 		A9403216168B0B6100BCF9C3 /* JKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403215168B0B6100BCF9C3 /* JKAppDelegate.m */; };
 		A9403219168B0B6100BCF9C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9403217168B0B6100BCF9C3 /* MainMenu.xib */; };
+		A9403221168B0B9100BCF9C3 /* JKMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403220168B0B9100BCF9C3 /* JKMainWindowController.m */; };
+		A9403223168B0BA600BCF9C3 /* JKMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9403222168B0BA600BCF9C3 /* JKMainWindow.xib */; };
+		A9403228168B111D00BCF9C3 /* JKOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403227168B111D00BCF9C3 /* JKOutlineView.m */; };
+		A940322B168B117600BCF9C3 /* JKConfigurationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A940322A168B117600BCF9C3 /* JKConfigurationHeaderView.m */; };
+		A940322E168B133100BCF9C3 /* JKConfigurationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A940322D168B133100BCF9C3 /* JKConfigurationGroup.m */; };
+		A9403231168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403230168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m */; };
+		A9403234168B1C7E00BCF9C3 /* JKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403233168B1C7E00BCF9C3 /* JKConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,19 @@
 		A9403214168B0B6100BCF9C3 /* JKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKAppDelegate.h; sourceTree = "<group>"; };
 		A9403215168B0B6100BCF9C3 /* JKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAppDelegate.m; sourceTree = "<group>"; };
 		A9403218168B0B6100BCF9C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A940321F168B0B9100BCF9C3 /* JKMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMainWindowController.h; sourceTree = "<group>"; };
+		A9403220168B0B9100BCF9C3 /* JKMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMainWindowController.m; sourceTree = "<group>"; };
+		A9403222168B0BA600BCF9C3 /* JKMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKMainWindow.xib; sourceTree = "<group>"; };
+		A9403226168B111D00BCF9C3 /* JKOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKOutlineView.h; sourceTree = "<group>"; };
+		A9403227168B111D00BCF9C3 /* JKOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKOutlineView.m; sourceTree = "<group>"; };
+		A9403229168B117600BCF9C3 /* JKConfigurationHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKConfigurationHeaderView.h; sourceTree = "<group>"; };
+		A940322A168B117600BCF9C3 /* JKConfigurationHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKConfigurationHeaderView.m; sourceTree = "<group>"; };
+		A940322C168B133100BCF9C3 /* JKConfigurationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKConfigurationGroup.h; sourceTree = "<group>"; };
+		A940322D168B133100BCF9C3 /* JKConfigurationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKConfigurationGroup.m; sourceTree = "<group>"; };
+		A940322F168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKConfigurationHeaderRowView.h; sourceTree = "<group>"; };
+		A9403230168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKConfigurationHeaderRowView.m; sourceTree = "<group>"; };
+		A9403232168B1C7E00BCF9C3 /* JKConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKConfiguration.h; sourceTree = "<group>"; };
+		A9403233168B1C7E00BCF9C3 /* JKConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +102,14 @@
 		A9403208168B0B6100BCF9C3 /* Inspector */ = {
 			isa = PBXGroup;
 			children = (
+				A9403224168B10DC00BCF9C3 /* Model */,
+				A9403225168B10E900BCF9C3 /* Outline */,
 				A9403214168B0B6100BCF9C3 /* JKAppDelegate.h */,
 				A9403215168B0B6100BCF9C3 /* JKAppDelegate.m */,
 				A9403217168B0B6100BCF9C3 /* MainMenu.xib */,
+				A940321F168B0B9100BCF9C3 /* JKMainWindowController.h */,
+				A9403220168B0B9100BCF9C3 /* JKMainWindowController.m */,
+				A9403222168B0BA600BCF9C3 /* JKMainWindow.xib */,
 				A9403209168B0B6100BCF9C3 /* Supporting Files */,
 			);
 			path = Inspector;
@@ -100,6 +125,30 @@
 				A9403211168B0B6100BCF9C3 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9403224168B10DC00BCF9C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A940322C168B133100BCF9C3 /* JKConfigurationGroup.h */,
+				A940322D168B133100BCF9C3 /* JKConfigurationGroup.m */,
+				A9403232168B1C7E00BCF9C3 /* JKConfiguration.h */,
+				A9403233168B1C7E00BCF9C3 /* JKConfiguration.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A9403225168B10E900BCF9C3 /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				A9403226168B111D00BCF9C3 /* JKOutlineView.h */,
+				A9403227168B111D00BCF9C3 /* JKOutlineView.m */,
+				A9403229168B117600BCF9C3 /* JKConfigurationHeaderView.h */,
+				A940322A168B117600BCF9C3 /* JKConfigurationHeaderView.m */,
+				A940322F168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.h */,
+				A9403230168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m */,
+			);
+			name = Outline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +206,7 @@
 				A940320D168B0B6100BCF9C3 /* InfoPlist.strings in Resources */,
 				A9403213168B0B6100BCF9C3 /* Credits.rtf in Resources */,
 				A9403219168B0B6100BCF9C3 /* MainMenu.xib in Resources */,
+				A9403223168B0BA600BCF9C3 /* JKMainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +219,12 @@
 			files = (
 				A940320F168B0B6100BCF9C3 /* main.m in Sources */,
 				A9403216168B0B6100BCF9C3 /* JKAppDelegate.m in Sources */,
+				A9403221168B0B9100BCF9C3 /* JKMainWindowController.m in Sources */,
+				A9403228168B111D00BCF9C3 /* JKOutlineView.m in Sources */,
+				A940322B168B117600BCF9C3 /* JKConfigurationHeaderView.m in Sources */,
+				A940322E168B133100BCF9C3 /* JKConfigurationGroup.m in Sources */,
+				A9403231168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m in Sources */,
+				A9403234168B1C7E00BCF9C3 /* JKConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
