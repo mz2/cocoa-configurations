@@ -10,7 +10,8 @@
 
 @implementation NSTableCellView (JKNibLoading)
 
-+ (id)tableCellViewWithNibNamed:(NSString *)nibName owner:(id)owner {
++ (id) tableCellViewWithNibNamed:(NSString *)nibName owner:(id)owner
+{
     NSView * view = nil;
     NSArray * topLevelObjects = nil;
 	
