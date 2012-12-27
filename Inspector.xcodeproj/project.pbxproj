@@ -21,7 +21,6 @@
 		A9403231168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403230168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m */; };
 		A9403234168B1C7E00BCF9C3 /* JKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9403233168B1C7E00BCF9C3 /* JKConfiguration.m */; };
 		A9403237168B6D0500BCF9C3 /* FileInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9403236168B6D0500BCF9C3 /* FileInspector.xib */; };
-		A940323B168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = A940323A168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +51,6 @@
 		A9403232168B1C7E00BCF9C3 /* JKConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKConfiguration.h; sourceTree = "<group>"; };
 		A9403233168B1C7E00BCF9C3 /* JKConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKConfiguration.m; sourceTree = "<group>"; };
 		A9403236168B6D0500BCF9C3 /* FileInspector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileInspector.xib; sourceTree = "<group>"; };
-		A9403239168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableCellView+JKNibLoading.h"; sourceTree = "<group>"; };
-		A940323A168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableCellView+JKNibLoading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +104,6 @@
 		A9403208168B0B6100BCF9C3 /* Inspector */ = {
 			isa = PBXGroup;
 			children = (
-				A9403238168B719E00BCF9C3 /* Util */,
 				A9403224168B10DC00BCF9C3 /* Model */,
 				A9403235168B6C8F00BCF9C3 /* Inspectors */,
 				A9403225168B10E900BCF9C3 /* Outline */,
@@ -164,15 +160,6 @@
 				A9403236168B6D0500BCF9C3 /* FileInspector.xib */,
 			);
 			name = Inspectors;
-			sourceTree = "<group>";
-		};
-		A9403238168B719E00BCF9C3 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				A9403239168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.h */,
-				A940323A168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.m */,
-			);
-			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +237,6 @@
 				A940322E168B133100BCF9C3 /* JKConfigurationGroup.m in Sources */,
 				A9403231168B1B1000BCF9C3 /* JKConfigurationHeaderRowView.m in Sources */,
 				A9403234168B1C7E00BCF9C3 /* JKConfiguration.m in Sources */,
-				A940323B168B71B400BCF9C3 /* NSTableCellView+JKNibLoading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

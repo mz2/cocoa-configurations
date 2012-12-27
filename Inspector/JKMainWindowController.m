@@ -11,7 +11,6 @@
 #import "JKConfiguration.h"
 #import "JKConfigurationGroup.h"
 #import "JKConfigurationHeaderRowView.h"
-#import "NSTableCellView+JKNibLoading.h"
 
 @interface JKMainWindowController ()
 
@@ -45,6 +44,8 @@
     [super windowDidLoad];
     
     [self.configurationCollection setFloatsGroupRows:NO];
+	
+	[self.configurationCollection registerNib:[[NSNib alloc] initWithNibNamed:@"FileInspector" bundle:nil] forIdentifier:@"FileInspector"];
 }
 
 #pragma mark - Outline view configuration
@@ -65,13 +66,7 @@
 		return [outlineView makeViewWithIdentifier:@"DefaultCell" owner:self];
 	}
 	
-	NSView *cellView = [outlineView makeViewWithIdentifier:config.nibName owner:self];
-	if (!cellView) {
-		cellView = [NSTableCellView tableCellViewWithNibNamed:config.nibName owner:self];
-	}
-	
-	return cellView;
-	
+	return [outlineView makeViewWithIdentifier:config.nibName owner:self];	
 }
 
 - (CGFloat) outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item {
