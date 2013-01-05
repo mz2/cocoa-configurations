@@ -10,4 +10,7 @@
 
 @interface JKConfigurationHeaderView : NSTableCellView
 
+@property (strong) NSColor *headerGradientStartColor;
+@property (strong) NSColor *headerGradientEndColor;
+
 @end
