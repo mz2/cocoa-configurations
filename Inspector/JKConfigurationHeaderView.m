@@ -25,7 +25,6 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-	
 	NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:_headerGradientStartColor endingColor:_headerGradientEndColor];
 	[gradient drawInRect:dirtyRect angle:270.0f];
 }

@@ -57,3 +57,6 @@
 }
 
 @end
+
+@implementation JKConfigurationRowView
+@end

@@ -11,3 +11,7 @@
 @interface JKConfigurationHeaderRowView : NSTableRowView
 
 @end
+
+@interface JKConfigurationRowView : NSTableRowView
+
+@end
