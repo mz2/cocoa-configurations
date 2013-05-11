@@ -15,7 +15,7 @@
 @implementation JKConfiguration {
 }
 
-- (id) init
+- (instancetype) init
 {
 	self = [super init];
 	if (self) {
@@ -24,25 +24,38 @@
 	return self;
 }
 
-- (id) initWithNibName:(NSString *)name height:(CGFloat)height
+- (instancetype) initWithNibName:(NSString *)name modes:(NSDictionary *)modesDictionary
 {
 	self = [super init];
 	if (self) {
+        
 		_children = nil;
 		_nibName = name;
-		_height = height;
+        
+        assert(modesDictionary);
+        _modes = modesDictionary;
+        
+        _mode = @"normal";
 	}
 	return self;
 }
 
-+ (id) configuration
++ (instancetype) configuration
 {
 	return [[self alloc] init];
 }
 
-+ (id) configurationWithNibName:(NSString *)name height:(CGFloat)height
++ (instancetype) configurationWithNibName:(NSString *)name modes:(NSDictionary *)modesDictionary
 {
-	return [[self alloc] initWithNibName:name height:height];
+	return [[self alloc] initWithNibName:name modes:modesDictionary];
+}
+
+- (CGFloat)height
+{
+    assert(_mode);
+    assert(_modes);
+    assert(_modes[_mode][@"height"]);
+    return [_modes[_mode][@"height"] floatValue];
 }
 
 - (NSString *) description

@@ -10,11 +10,19 @@
 
 @interface JKConfiguration : NSObject
 
-@property(strong) NSArray *children;
-@property(strong) NSString *nibName;
-@property(assign) CGFloat height;
+@property (strong) NSArray *children;
+@property (strong) NSString *nibName;
 
-+ (id) configuration;
-+ (id) configurationWithNibName:(NSString *)name height:(CGFloat)height;
+@property (weak) id itemController;
+
+@property (readonly, assign) CGFloat height;
+
+@property (readwrite, strong) NSDictionary *modes;
+
+@property (readwrite, copy) NSString *mode;
+
++ (instancetype) configuration;
+
++ (instancetype) configurationWithNibName:(NSString *)name modes:(NSDictionary *)modesDictionary;
 
 @end
